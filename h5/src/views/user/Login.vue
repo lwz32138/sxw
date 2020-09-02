@@ -3,7 +3,7 @@
     <div class="shading">
       <div class="pictrue acea-row row-center-wrapper">
         <img :src="logoUrl" v-if="logoUrl" />
-        <img src="@assets/images/logo2.png" v-else />
+        <img src="@assets/images/logo.png" v-else />
       </div>
     </div>
     <div class="whiteBg" v-if="formItem === 1">

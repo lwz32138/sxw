@@ -8,6 +8,9 @@ function resolve(dir) {
 
 module.exports = {
   assetsDir: "h5",
+  devServer: {
+    port: 8018
+  },
   configureWebpack: config => {
     Object.assign(config.resolve.alias, {
       "@utils": resolve("src/utils"),
@@ -20,6 +23,8 @@ module.exports = {
       "@views": resolve("src/views"),
       "@mixins": resolve("src/mixins")
     });
+
+
 
     if (process.env.NODE_ENV !== "production") {
       config.plugins.push(
